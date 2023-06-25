@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+
+            margin: 20px 20px;
+            border-bottom: 1px dotted;
+            position: relative;
+            box-shadow: 0 0 5px rgb(195, 195, 195);
+        }
+
+        a::before {
+            content: "";
+            display: inline-block;
+            background: url(images/scholarship-for-engineering-2023.webp);
+            width: 10px;
+            height: 10px;
+            margin: 0px 8px 0px 20px;
+
+        }
+
+        a {
+            font-size: 18px;
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            font-weight: bold;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+
+
+        }
+
+        img {
+            width: 300px;
+            height: 100px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 217, 0);
+            padding: 10px;
+            gap: 10px;
+            border-radius: 0px 0px 0px 0px;
+        }
+
+        .auto {
+            width:470px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        #p {
+            font-weight: bold;
+            font-family: 'poppins', sans-serif;
+            color: rgb(132, 0, 255);
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 70px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        #div-res {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 150px;
+            position: relative;
+        }
+
+        input {
+            padding: 6px 16px;
+            width: 200px;
+            margin-bottom: 40px;
+
+        }
+
+        .mmf {
+            display: flex;
+            flex-grow: 1;
+
+        }
+
+        label {
+            margin-top: 5px;
+        }
+
+        .sio {
+            margin-right: 110px;
+        }
+
+        button {
+            background-color: rgb(136, 0, 255);
+            padding: 10px 36px;
+            color: white;
+            font-weight: bold;
+            border: none;
+            transition: all .3s;
+
+
+        }
+
+        button:hover {
+            box-shadow: 0 0 5px rgb(132, 0, 255);
+        }
+
+        form {
+            position: relative;
+            font-size: 18px;
+            padding-bottom: 70px;
+
+        }
+
+        form>div+div+button {
+            background-color: rgb(132, 0, 255);
+            text-align: center;
+            position: absolute;
+            bottom: 0%;
+            left: 36%;
+
+        }
+
+        @media screen and (max-width:768px) {
+            img {
+                width: 140px;
+                height: 60px;
+            }
+
+            .auto {
+
+                font-size: 15px;
+                text-align: justify;
+                line-height: normal;
+                width: 190px;
+
+                overflow: auto;
+                height: 50px;
+            }
+
+            #p {
+                font-size: 16px;
+                line-height: 20px;
+                margin-top: 20px;
+                margin-bottom: 25px;
+                padding: 0px 10px;
+            }
+
+            input {
+                padding: 6px 16px;
+                width: 180px;
+                margin-bottom: 20px;
+            }
+
+            .mmf {
+                box-sizing: border-box;
+                display: flex;
+                flex-grow: 1;
+                padding: 15px;
+                font-size: 16px;
+                margin-right: 10px;
+                
+            }
+
+            .sio {
+                margin-right: 30px;
+                width: 100px;
+                margin-left: 10px;
+
+                margin-top: 7px;
+            }
+
+            form>div+div+button {
+                background-color: rgb(132, 0, 255);
+                text-align: center;
+                position: absolute;
+                bottom: 0%;
+                left: 35%;
+
+            }
+
+            section {
+
+                margin: 10px 10px;
+                border-bottom: 1px dotted;
+                position: relative;
+                box-shadow: 0 0 5px rgb(195, 195, 195);
+            }
+
+            label {
+                margin-top:-5px;
+                margin-left: 10px;
+                margin-right: 10px;
+                text-align: center;
+            }
+
+            #div-res {
+
+                margin-bottom: 100px;
+
+            }
+
+            a {
+                font-size: 16px;
+
+                bottom: 3%;
+                right: 5%;
+                font-weight: bold;
+            }
+            body{
+                width: 100%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <main>
+            <header>
+                <img src="images/sona.jpeg" alt="">
+            </header>
+            <div class="auto">
+                Autonomous Institution | Affiliated to Anna University, Chennai 2(f) & 12(B) status (UGC)| ISO 9001:2015
+                certified NAAC-Accredited 'A' - Grade | NBA Accredited Programmes FIST-Funded(DST) | SIRO (DSIR)
+            </div>
+        </main>
+        <p id="p">Results for Final Year UG and MCA Programmes, Semester End Examination Apr/ May 2023</p>
+        <div id="div-res">
+            <form action="" autocomplete="off">
+                <div class="mmf">
+                    <label for="reg">Enter your Register Number :</label>
+                    <input type="tel" required id="reg" name="reg"><br>
+                </div>
+                <div class="mmf">
+                    <label class="sio" for="dob">Date of Birth :</label>
+                    <input type="date" id="dob" name="dof" required>
+                </div>
+                <button>SUBMIT</button>
+            </form>
+
+
+
+        </div>
+        <a href="#">print</a>
+    </section>
+    <p style="text-align: center; color:grey; padding: 10px;">© 2023 Sona College of Technology. All Rights Reserved.
+    </p>
+
+</body>
+
+
+</html>

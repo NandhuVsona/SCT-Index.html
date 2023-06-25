@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Anton', sans-serif;
+            font-family: 'Cinzel Decorative', cursive;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-family: 'Jost', sans-serif;
+            font-family: 'Libre Baskerville', serif;
+            font-family: 'Mukta', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .img {
+            width: 200px;
+
+        }
+
+        a {
+            text-decoration: none;
+            font-size: larger;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        header {
+            background-color: rgb(255, 217, 0);
+            padding: 10px;
+        }
+
+        ul {
+            display: flex;
+            gap: 10px;
+        }
+
+        section {
+
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 16px;
+            margin: 30px;
+            flex-grow: 1;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            margin-top: 2%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 0px;
+            font-weight: 400;
+        }
+
+        main>h1+section>img+div {
+            padding: 10px;
+            width: 550px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px black;
+            background-color: rgb(229, 243, 255);
+            flex: 1;
+
+        }
+
+        .img-2 {
+            width: 100px;
+            border-radius: 20px;
+            flex: 1;
+
+        }
+
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 6px 16px;
+            border-radius: 10px none;
+            margin: 10px 0px 20px 0px;
+            font-size: 16px;
+        }
+
+        .personal-info {
+            background-color: #05ae0e;
+            color: white;
+            padding: 7px;
+            text-align: center;
+            margin: 10px 0px 30px 0px;
+
+        }
+
+        form>p>button {
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border: none;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        #p {
+            text-align: center;
+            padding: 12px;
+            margin-top: 10px;
+        }
+
+        article {
+            display: flex;
+
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            gap: 10px;
+        }
+
+        .mmf {
+            width: 220px;
+            flex-grow: 1;
+        }
+
+        footer {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .submit {
+            background-color: rgb(255, 132, 0);
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 8px 40px;
+            border-radius: 5px;
+        }
+
+        main {
+            width: 100%;
+        }
+
+        @media screen and (max-width:768px) {
+            .img-2 {
+                width: 360px;
+            }
+
+            main>h1+section>img+div {
+                width: 360px;
+            }
+
+            .img {
+                width: 150px;
+                margin-right: 10px;
+
+            }
+
+            .img+ul>li>a {
+                font-size: medium;
+                text-align: right;
+            }
+
+            h1 {
+                font: size 25px;
+                font-weight: 600;
+            }
+        }
+
+        @media screen and (min-width:769px) {
+            .img-2 {
+                width: 550px;
+            }
+
+            main>h1+section>img+div {
+                width: 550px;
+            }
+        }
+
+        .num {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        label>span {
+            opacity: 0.3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="img" src="images/sona.jpeg" alt="">
+            <ul class="num">
+                <li><a href="#">93634 01539</a></li>
+                <li><a href="#">94425 05939</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>100% Scolarship for Toppers</h1>
+        <section>
+            <img class="img-2" src="images/scholarship-for-engineering-2023.webp" alt="">
+            <div id="#dive">
+                <form action="" autocomplete="off">
+                    <p id="p">
+                        <b>This information will let us know more about you</b>
+                        <button>Free Regestration</button>
+                    </p>
+
+                    <p class="personal-info">PERSONAL DETAILS</p>
+                    <label for="sname">Name of the Student <span>(required)</span></label><br>
+                    <input type="text" placeholder="Student Name" required name="sname" id="sname">
+                    <label for="address">Address <span>(required)</span></label>
+                    <input type="text" placeholder="Enter Your Address" required name="address" id="address">
+                    <article>
+                        <div class="mmf">
+                            <label for="Reg-Number">+2 Regester Number <span>(required)</span></label>
+                            <input name="Reg-Number" type="number" placeholder="Enter +2 Regester Number" required
+                                id="Reg-Number">
+                        </div>
+                        <div class="mmf">
+                            <label for="cut-off">Cut-Off Mark <span>(required)</span></label><br>
+                            <input id="cut-off" name="cut-off" type="number" placeholder="Enter Cut-off Mark" required>
+                        </div>
+                    </article>
+                    <label for="course">Course Looking For <span>(required)</span></label><br>
+                    <input name="course" id="course" type="text" placeholder="Select Course" required
+                        list="select-course">
+                    <datalist id="select-course">
+                        <option value="Computer Science Engineering">
+                        <option value="Information Technology">
+                        <option value="Electronics and Communication Engineering">
+                        <option value="Fashion Technology">
+                        <option value="AIML">
+                        <option value="AIDS">
+                        <option value="Civil Engineering">
+                        <option value="Mechinical Engineering">
+                    </datalist>
+
+                    <article>
+                        <div class="mmf">
+                            <label for="whatsapp">Contact (Whatsapp) <span>(required)</span></label>
+                            <input id="whatsapp" name="whatsapp" type="tel" placeholder="Enter Whatsapp Number" required
+                                pattern="[0-9]{10}">
+                        </div>
+                        <div class="mmf">
+                            <label for="number">Father/Mother No <span>(required)</span></label>
+                            <input name="number" id="number" type="tel" placeholder="Enter Parents Number" required
+                                pattern="[0-9]{10}">
+                        </div>
+                    </article>
+                    <button class="submit" type="submit">SUBMIT</button>
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p><a href="#">Sona College of Technology </a>© 2023 All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
